@@ -63,7 +63,7 @@ API-ключом, <br>
 Оба проекта поддерживают запуск в Docker:
 
 bash
-# Сборка и запуск (из корня проекта)
+Сборка и запуск (из корня проекта)
 docker-compose up --build <br>
 База данных: postgres://localhost:5432/weatherdb <br>
 Приложение: http://localhost:8081
