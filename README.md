@@ -77,7 +77,7 @@ Docker / docker-compose
 
 # Структура пакетов
 kameleoon.apiweather.sdk
-├── controller       → REST-контроллеры
+├── controller       → контроллеры
 ├── dto              → Data Transfer Objects
 ├── entity           → JPA-сущности
 ├── exception        → Исключения и обработчик
