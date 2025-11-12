@@ -76,12 +76,12 @@ RestTemplate
 Docker / docker-compose
 
 # Структура пакетов
-kameleoon.apiweather.sdk
-├── controller       → контроллеры
-├── dto              → Data Transfer Objects
-├── entity           → JPA-сущности
-├── exception        → Исключения и обработчик
-├── repository       → Spring Data JPA репозитории
-├── service          → Логика SDK и кэширования
-└── SdkWeather       → Управление экземплярами SDK
+kameleoon.apiweather.sdk <br>
+├── controller       → контроллеры <br>
+├── dto              → Data Transfer Objects <br>
+├── entity           → JPA-сущности <br>
+├── exception        → Исключения и обработчик <br>
+├── repository       → Spring Data JPA репозитории <br>
+├── service          → Логика SDK и кэширования <br>
+└── SdkWeather       → Управление экземплярами SDK <br>
 
