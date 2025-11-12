@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  weather-db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: weatherdb
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  weather-sdk-app:
+    build: .
+    ports:
+      - "8081:8080"
+    depends_on:
+      - weather-db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://weather-db:5432/weatherdb
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: pass
+
+volumes:
+  postgres_data:
