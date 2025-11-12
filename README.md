@@ -37,26 +37,27 @@ API-ключом, <br>
 Возможность удалить экземпляр SDK вручную → очистка кэша + остановка polling. <br>
 
 # Управление SDK через REST API
-## POST /api/sdk/initialize?apiKey=...&mode=polling
 Создать новый SDK-экземпляр
+## POST /api/sdk/initialize?apiKey=...&mode=polling
 
-## DELETE /api/sdk/{apiKey}
 Удалить экземпляр и освободить ресурсы
+## DELETE /api/sdk/{apiKey}
 
-## GET /api/sdk/{apiKey}/weather/{city}
 Получить погоду (с кэшированием)
+## GET /api/sdk/{apiKey}/weather/{city}
 
-## POST /api/sdk/multiple?apiKey=...
+
 Получить погоду для списка городов
+## POST /api/sdk/multiple?apiKey=...
 
-## GET /api/sdk/{apiKey}/cached-cities
 Список закэшированных городов
+## GET /api/sdk/{apiKey}/cached-cities
 
-## GET /api/sdk/{apiKey}/cache-stats
 Статистика кэша и режима
+## GET /api/sdk/{apiKey}/cache-stats
 
-## DELETE /api/sdk/{apiKey}/clear-cache
 Очистить кэш для ключа
+## DELETE /api/sdk/{apiKey}/clear-cache
 
 # Запуск проектов
 Оба проекта поддерживают запуск в Docker:
