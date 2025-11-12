@@ -68,12 +68,12 @@ docker-compose up --build <br>
 Приложение: http://localhost:8081
 
 # Технологии
-Java 21
-Spring Boot 3.5.7
-PostgreSQL
-JPA / Hibernate
-RestTemplate
-Docker / docker-compose
+Java 21 <br>
+Spring Boot 3.5.7 <br>
+PostgreSQL <br>
+JPA / Hibernate <br>
+RestTemplate <br>
+Docker / docker-compose <br>
 
 # Структура пакетов
 kameleoon.apiweather.sdk <br>
